@@ -178,6 +178,7 @@ li.nav-item {
     }
 
     .video-home-cover {
+        left: 50%;
         object-fit: cover;
         /* width: 100%; */
     }
@@ -186,29 +187,51 @@ li.nav-item {
 
 
 
+
+
 /***video cover****/
 
 .home-cover {
     position: relative;
     height: 95vh;
-    background-color: #250f01a5;
-    padding: 150px 0;
+    background-color: #020202a7;
+    /* padding: 150px 0; */
+
 }
 
 
-.video-home-cover {
-    position: fixed;
-    left: 50%;
-    top: -50px;
+#video-home-cover {
+    /* position: fixed;
+    left: 100%;
+    top: -150px;
     transform: translateX(-50%);
     object-fit: cover;
-    /* width: 300%; */
+     */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: cover;
+    outline: none;
+    border: none;
+    box-shadow: none;
     z-index: -1;
 }
 
 
 .content-over-video {
     color: var(--varLightOrange);
+}
+
+.content-over-video h1 {
+    padding-top: 150px;
 }
 
 #video-button {
