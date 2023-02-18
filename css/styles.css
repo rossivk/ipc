@@ -40,6 +40,8 @@ br {
 }
 
 button {
+    font-size: 1em;
+    font-weight: 600;
     cursor: pointer;
     padding: 10px 30px;
     background-color: var(--varOrange);
@@ -55,9 +57,12 @@ h4 {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
+h4 {
+    font-size: 1.125em;
+}
 
 header {
     background-color: var(--varOrange);
@@ -125,7 +130,21 @@ li.nav-item {
 }
 
 
-@media screen and (min-width: 780px) {
+
+@media screen and (min-width: 850px) {
+    h1 {
+        font-size: 3.5em;
+    }
+
+    h4 {
+        font-size: 2em;
+
+    }
+
+    button {
+        font-size: 1.25em;
+        font-weight: 600;
+    }
 
     .navbar {
         max-width: 1440px;
@@ -183,6 +202,16 @@ li.nav-item {
         /* width: 100%; */
     }
 
+    .content-over-video {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .book-your-free-trial {
+        margin: 50px 0;
+    }
+
+
 }
 
 
@@ -228,15 +257,20 @@ li.nav-item {
 
 .content-over-video {
     color: var(--varLightOrange);
+    position: relative;
 }
 
 .content-over-video h1 {
-    padding-top: 150px;
+    padding: 75px 0;
+}
+
+.book-your-free-trial {
+    margin: 75px 0;
 }
 
 #video-button {
     position: absolute;
-    top: 75vh;
+    bottom: 0;
     left: 0;
     background: transparent;
     color: var(--varBackroundGray);
