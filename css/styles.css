@@ -19,7 +19,9 @@ html {
     text-align: center;
     font-size: 16px;
     color: var(--varBlack);
+    font-family: 'Montserrat', sans-serif;
 }
+
 
 ul {
     padding: 0;
@@ -191,29 +193,45 @@ li.nav-item {
 
 #video-button {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 5px;
+    left: 5px;
     background: transparent;
     color: var(--varBackroundGray);
 }
 
 #fitness-training {
-    background: var(--varBackroundGray);
-    height: 550px;
+    background-image: url("/assets/svg/backround-test--.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--varBackroundGray);
 }
 
 .fitness-training-wrapper {
+
     padding: 100px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.fitness-training-wrapper h2 {
+    margin-bottom: 50px;
 }
 
 .icon-text-container {
     width: 250px;
-    margin: 0 auto;
-
+    margin: 0 auto 50px;
+    padding: 10px 10px 20px;
+    background-color: var(--varBackroundGray);
 }
 
 .icon-text-container lottie-player {
-    height: 125px;
+    height: 100px;
+}
+
+.icon-text-container h4 {
+    margin: 25px 0;
 }
 
 
@@ -226,7 +244,7 @@ li.nav-item {
     }
 
     h2 {
-        font-size: 3em;
+        font-size: 2.75em;
 
     }
 
@@ -304,6 +322,20 @@ li.nav-item {
 
     .book-your-free-trial {
         margin: 100px 0;
+    }
+
+    .icons-text-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .break {
+        flex-basis: 100%;
+        height: 0;
+    }
+
+    .icon-text-container {
+        padding: 25px;
     }
 
 }
