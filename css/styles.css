@@ -6,13 +6,20 @@
     --varLightOrange: #F4E7DF;
     --varBackgroundOrange: #FEF2E9;
     --varBackroundGray: #F0F0F0;
+
+    --transition-5: all 0.5s ease-in-out;
+    --transition-2: all 0.2s linear;
 }
 
-* {
+
+*,
+::after,
+::before {
     margin: 0;
-    /* padding: 0; */
-
+    padding: 0;
+    box-sizing: border-box;
 }
+
 
 html {
     overflow-x: hidden;
@@ -53,9 +60,13 @@ button {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
     font-family: 'Orbitron', sans-serif;
+    margin: 0;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
 
@@ -69,11 +80,10 @@ h2 {
 
 h3 {
     font-size: 1.5em;
-
 }
 
 h4 {
-    font-size: 1.125em;
+    font-size: 1.25em;
 }
 
 header {
@@ -90,36 +100,53 @@ header {
 }
 
 .navbar .logo img {
-    height: 75px;
+    height: 70px;
     display: block;
 }
 
 .nav-container {
     position: absolute;
-    top: 74px;
+    top: 75px;
     background: var(--varOrange);
     width: 100%;
     left: 0;
-    padding: 25px 0;
-    z-index: 2;
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: 0.5s ease-in-out;
-    transform: scale(1, 0);
-    transform-origin: top;
-    transition-delay: -0.5s;
+    z-index: 1;
+}
+
+.nav-link-wrapper {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition-5);
+}
+
+.nav-link-wrapper a {
+    color: var(--varBlack);
+    transition: var(--transition-2);
+    padding: 5px 10px;
+}
+
+
+.nav-link-wrapper a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: #fef2e9b3;
+}
+
+.social-icons-mobile a,
+.social-icons-desktop a {
+    transition: var(--transition-2);
+    padding: 15px 5px 2px;
+    border-radius: 5px;
 
 }
 
-.nav-container.active {
-    transform: scale(1, 1);
-    transform-origin: top;
-    -webkit-transition: .5s ease-in;
-    -moz-transition: .5s ease-in;
-    -o-transition: .5s ease-in;
-    transition: 0.5s ease-in;
+.social-icons-mobile a:hover,
+.social-icons-desktop a:hover {
+    background-color: #fef2e94b;
+}
 
+.show-links {
+    height: 250px;
 }
 
 li.nav-item {
@@ -142,6 +169,7 @@ li.nav-item {
 }
 
 
+
 /***video cover****/
 
 .home-cover {
@@ -150,7 +178,6 @@ li.nav-item {
     background-color: #020202a7;
 
 }
-
 
 #video-home-cover {
     /* position: fixed;
@@ -178,6 +205,7 @@ li.nav-item {
 }
 
 
+
 .content-over-video {
     color: var(--varLightOrange);
     position: relative;
@@ -200,22 +228,22 @@ li.nav-item {
 }
 
 #fitness-training {
-    background-image: url("/assets/svg/backround-test--.svg");
+    background-image: url("/assets/images/background-section.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--varBackroundGray);
 }
 
-.fitness-training-wrapper {
-
-    padding: 100px 0;
+.fitness-training-wrapper,
+.meet-the-coaches-wrapper {
+    padding: 100px 0 50px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 
-
-.fitness-training-wrapper h2 {
+.fitness-training-wrapper h2,
+.meet-the-coaches-wrapper h2 {
     margin-bottom: 50px;
 }
 
@@ -226,14 +254,33 @@ li.nav-item {
     background-color: var(--varBackroundGray);
 }
 
+
 .icon-text-container lottie-player {
     height: 100px;
 }
 
-.icon-text-container h4 {
+.icon-text-container h4,
+.meet-the-coaches-image-text-container h4 {
     margin: 25px 0;
 }
 
+#meet-the-coaches {
+    /* background-image: url("/assets/images/background-section-flipped.png"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--varLightOrange);
+}
+
+.meet-the-coaches-image-text-container {
+    width: 250px;
+    margin: 0 auto 50px;
+    padding: 10px 10px 20px;
+}
+
+.meet-the-coaches-image-text-container img {
+    width: 200px;
+    height: 300px;
+}
 
 
 @media screen and (min-width: 850px) {
@@ -267,19 +314,25 @@ li.nav-item {
     .nav-container {
         /* display: flex; */
         position: relative;
-        transform: scale(1, 1);
-        transition-delay: 0.1s ease-in-out;
+        /* justify-content: flex-end; */
+        /* transform: scale(1, 1); */
         top: 0;
-        padding: 0;
-        width: 70%;
 
+        /* transition-delay: 0.1s ease-in-out; */
+        /* padding: 0; */
+        /* width: 70%; */
+        /* height: auto; */
     }
+
 
     .nav-link-wrapper {
         display: flex;
         justify-content: flex-end;
-
+        height: auto;
+        /* width: 70%; */
     }
+
+
 
     li.nav-item {
         padding-left: 20px;
@@ -336,6 +389,11 @@ li.nav-item {
 
     .icon-text-container {
         padding: 25px;
+    }
+
+    .meet-the-coaches-image-text-wrapper {
+        display: flex;
+        justify-content: space-between;
     }
 
 }
@@ -453,4 +511,55 @@ li.nav-item {
 #nav-hamburger-icon-toggle.active span:nth-child(6) {
     left: calc(50% - 3px);
     top: 20px;
+}
+
+
+
+
+
+/* ===============Video===============*/
+
+
+
+/* switch button */
+
+.switch-btn {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    width: 7rem;
+    height: 2rem;
+    display: flex;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid var(--varOrange);
+    transition: var(--transition);
+    padding: 0;
+    background-color: transparent;
+}
+
+.switch-btn span {
+    display: inline-block;
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: var(--varLightOrange);
+}
+
+.switch {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--varOrange);
+    border-radius: 3px;
+    margin: 0;
+    display: block;
+    transition: var(--transition-5);
+}
+
+.slide .switch {
+    left: 50%;
 }
