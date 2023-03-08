@@ -6,7 +6,6 @@
     --varLightOrange: #F4E7DF;
     --varBackgroundOrange: #FEF2E9;
     --varBackroundGray: #F0F0F0;
-
     --transition-5: all 0.5s ease-in-out;
     --transition-2: all 0.2s linear;
 }
@@ -29,14 +28,12 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
-
 ul {
     padding: 0;
 }
 
 li {
     list-style: none;
-
 }
 
 a {
