@@ -341,7 +341,22 @@ li.nav-item {
 /************* carousel gallery ***************/
 
 #gallery {
-    /* background-image: url(/assets/svg/galerry-background.svg); */
+    /* background-image: url(/assets/svg/galerry_1.svg); */
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--varBackgroundOrange);
+}
+
+.gallery {
+    position: relative;
+}
+
+.phoenix-with-hearts {
+    width: 250px;
+    position: absolute;
+    top: -50px;
+    left: 0px;
 }
 
 .carousel {
