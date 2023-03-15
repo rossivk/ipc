@@ -3,13 +3,11 @@
 
 const navHamburgerIconToggle = document.getElementById('nav-hamburger-icon-toggle');
 const navContainer = document.querySelector('.nav-container');
-const navLinkWrapper = document.querySelector('.nav-link-wrapper ');
+const navLinkWrapper = document.querySelector('.nav-link-wrapper');
 
 navHamburgerIconToggle.addEventListener('click', () => {
     navHamburgerIconToggle.classList.toggle('active');
-    // navContainer.classList.toggle('active');
-
-    navLinkWrapper.classList.toggle("show-links");
+    navLinkWrapper.classList.toggle('show-links');
 
 })
 
@@ -34,7 +32,7 @@ navHamburgerIconToggle.addEventListener('click', () => {
 
 const btn = document.querySelector('.switch-btn');
 const video = document.querySelector('.video-container');
-const videoToPlay = document.getElementById("video-home-cover");
+const videoToPlay = document.getElementById('video-home-cover');
 
 btn.addEventListener('click', () => {
     if (!btn.classList.contains('slide')) {
@@ -67,5 +65,10 @@ function startCarousel() {
     }
 }
 
+const tasterInfo = document.querySelector('.lottie-arrow');
+const tasterSessionDateTime = document.querySelector('.taster-session-date-time')
+tasterInfo.addEventListener('click', function () {
+    tasterSessionDateTime.classList.toggle('show-taster-session-date-time');
 
+})
 
