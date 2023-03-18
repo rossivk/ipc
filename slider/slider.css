@@ -1,0 +1,33 @@
+.slider {
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../assets/images/DSC02663.jpg);
+}
+
+
+.slide {
+    -webkit-animation: 1.5s slide;
+    animation: 5s slide;
+}
+
+@-webkit-keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100vw);
+    }
+}
