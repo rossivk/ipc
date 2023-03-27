@@ -14,22 +14,6 @@ navHamburgerIconToggle.addEventListener('click', () => {
 
 // cover video play and pause
 
-// const videoToPlay = document.getElementById("video-home-cover");
-// const videoButton = document.getElementById("video-button");
-
-// videoButton.addEventListener('click', playVideoOnClick);
-
-
-// function playVideoOnClick() {
-//     if (!videoToPlay.paused) {
-//         videoToPlay.pause();
-//         videoButton.innerHTML = "Play Video";
-//     } else {
-//         videoToPlay.play();
-//         videoButton.innerHTML = "Pause";
-//     }
-// }
-
 const btn = document.querySelector('.switch-btn');
 const video = document.querySelector('.video-container');
 const videoToPlay = document.getElementById('video-home-cover');
