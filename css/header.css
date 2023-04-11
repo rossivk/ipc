@@ -1,0 +1,158 @@
+header {
+    background-color: var(--varOrange);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 10px;
+}
+
+.navbar .logo img {
+    height: 70px;
+    display: block;
+}
+
+.nav-container {
+    position: absolute;
+    top: 75px;
+    background: var(--varOrange);
+    width: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.nav-link-wrapper {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition-5);
+}
+
+.nav-link-wrapper a {
+    display: inline-block;
+    position: relative;
+    color: var(--varBlack);
+    padding: 5px 10px;
+}
+
+.nav-link-wrapper a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scale(0);
+    height: 5px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--varLightOrangeText);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link-wrapper a:hover::after {
+    transform: scale(1);
+    transform-origin: left;
+}
+
+.nav-link-wrapper .active a {
+    color: var(--varLightOrangeText);
+}
+
+.social-icons-mobile a,
+.social-icons-desktop a {
+    transition: var(--transition-2);
+    padding: 15px 5px 2px;
+    border-radius: 5px;
+}
+
+.social-icons-mobile a:hover,
+.social-icons-desktop a:hover {
+    background-color: #fef2e94b;
+}
+
+.show-links {
+    height: 250px;
+}
+
+li.nav-item {
+    padding: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.social-icons-desktop {
+    display: none;
+}
+
+.social-icons-mobile {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons-mobile li {
+    padding: 10px 10px;
+}
+
+@media screen and (min-width: 650px) {
+
+    .icons-text-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .icon-text-container {
+        margin: 30px;
+    }
+
+    .links-menu ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+
+    .navbar {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .nav-container {
+        position: relative;
+        top: 0;
+    }
+
+    .nav-link-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        height: auto;
+    }
+
+
+
+    li.nav-item {
+        padding-left: 20px;
+    }
+
+    .social-icons-mobile {
+        display: none;
+    }
+
+    .social-icons-desktop {
+        display: flex;
+        width: 15%;
+        justify-content: flex-end;
+    }
+
+    .social-icons-desktop li {
+        padding-left: 20px
+    }
+
+
+    .nav-hamburger-icon-wrap {
+        display: none;
+    }
+}

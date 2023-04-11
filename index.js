@@ -36,7 +36,7 @@ const images = ["DSC02663.jpg", "DSC02664.jpg", "DSC02665.jpg", "DSC02666.jpg", 
 const carousel = document.querySelector('.carousel');
 const interval = setInterval(function () {
     startCarousel();
-}, 3000);
+}, 4000);
 
 let index = 1;
 function startCarousel() {
