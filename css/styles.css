@@ -292,7 +292,7 @@ p {
 }
 
 .show-taster-session-date-time {
-    height: 450px;
+    height: 600px;
 }
 
 .taster-session-date {
@@ -471,14 +471,20 @@ footer {
         margin-bottom: 50px;
     }
 
+    .show-taster-session-date-time {
+        height: 450px;
+    }
+
     .taster-session-info {
         width: 500px;
     }
 
 
+
+
     .taster-session-img img {
         width: 600px;
-        height: 400px;
+        height: auto;
     }
 
     .taster-session-small-print {
@@ -509,8 +515,6 @@ footer {
         font-size: 1.25em;
         font-weight: 600;
     }
-
-
 
     .video-home-cover {
         left: 50%;
@@ -702,7 +706,7 @@ footer {
 
 .switch-btn {
     position: absolute;
-    bottom: 2%;
+    bottom: 5%;
     left: 2%;
     width: 7rem;
     height: 2rem;
