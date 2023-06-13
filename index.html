@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/transition.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,11 +21,13 @@
 </head>
 
 <body>
+    <div class="transition-page transition-1 is-active"></div>
+
     <header>
         <div class="navbar">
             <!-- nav header -->
             <div class="logo">
-                <a href="../index.html"><img src="../assets/images/phoenix-300px-height.png" alt="logo-design"></a>
+                <a href="./index.html"><img src="./assets/images/phoenix-300px-height.png" alt="logo-design"></a>
             </div>
             <div>
                 <h4>Iron Phoenix<br> Fitness</h4>
@@ -44,34 +47,54 @@
                 <ul class="nav-link-wrapper">
                     <li class="nav-item"><a href="index.html">Home</a></li>
                     <li class="nav-item"><a href="memebrships.html">Memebrships</a></li>
-                    <li class="nav-item"><a href="/timetable/timetable.html">Timetable</a></li>
+                    <li class="nav-item"><a href="timetable.html">Timetable</a></li>
                     <li class="nav-item"><a href="blog.html">Blog</a></li>
                     <li class="nav-item"><a href="contact.html">Contact</a></li>
                     <ul class="social-icons-mobile">
-                        <li class="insta"><a href="" target=”_blank”><img src="../assets/images/instagram.png"
-                                    height="24" alt="instagram"></a>
+                        <li class="insta"><a href="https://www.instagram.com/ironphoenixcf/?hl=en" target=”_blank”><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="30"
+                                    fill="#250f01"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z" />
+                                </svg></a>
                         </li>
-                        <li class="facebook"><a href="" target=”_blank”><img src="../assets/images/facebook.png"
-                                    height="24" alt="facebook"></a></li>
+                        <li class="facebook"><a href="https://www.facebook.com/ironphoenixcf" target=”_blank”><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="30"
+                                    fill="#250f01"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" />
+                                </svg></a>
+                        </li>
                     </ul>
                 </ul>
             </div>
             <!-- social media -->
             <div class="social-icons-desktop">
-                <li class="insta"><a href="https://www.instagram.com/ironphoenixcf/?hl=en" target=”_blank”><img
-                            src="../assets/images/instagram.png" height="24" alt="instagram"></a>
+                <li class="insta"><a href="https://www.instagram.com/ironphoenixcf/?hl=en" target=”_blank”><svg
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="30"
+                            fill="#250f01"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z" />
+                        </svg></a>
                 </li>
-                <li class="facebook"><a href="https://www.facebook.com/ironphoenixcf" target=”_blank”><img
-                            src="../assets/images/facebook.png" height="24" alt="facebook"></a></li>
+                <li class="facebook"><a href="https://www.facebook.com/ironphoenixcf" target=”_blank”><svg
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="30"
+                            fill="#250f01"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" />
+                        </svg></a>
+                </li>
             </div>
+
         </div>
     </header>
 
     <section class="home-cover section" id="home-cover">
+
         <div class="video-home-cover">
-            <video poster="../assets/images/phoenix-cover-filtry.jpg" style="object-position:30%"
-                data-object-fit="cover" id="video-home-cover" loop>
-                <source src="../assets/videos/phoenix-cover-video.mp4" type="video/mp4">
+            <video poster="./assets/images/phoenix-cover-filtry.jpg" style="object-position:30%" data-object-fit="cover"
+                id="video-home-cover" loop>
+                <source src="./assets/videos/phoenix-cover-video.mp4" type="video/mp4">
             </video>
         </div>
         <div class="content-over-video">
@@ -81,8 +104,8 @@
         </div>
         <!-- <button id="video-button">Play Video</button> -->
         <button class="switch-btn">
-            <span>pause</span>
-            <span>play</span>
+            <span>❚❚</span>
+            <span> ▶</span>
             <span class="switch"></span>
 
         </button>
@@ -93,21 +116,21 @@
             <h2>Fitness Training</h2>
             <div class="icons-text-wrapper">
                 <div class="icon-text-container">
-                    <lottie-player class="" src="../assets/json/constantly-varied.json" mode="" background="transparent"
+                    <lottie-player class="" src="./assets/json/constantly-varied.json" mode="" background="transparent"
                         speed="0.5" loop autoplay>
                     </lottie-player>
                     <h4>Constantly Varied</h4>
                     <p>Every day is a different workout, which motivates and gives you a new chance to develop.</p>
                 </div>
                 <div class="icon-text-container">
-                    <lottie-player class="" src="../assets/json/functional-movement.json" mode=""
+                    <lottie-player class="" src="./assets/json/functional-movement.json" mode=""
                         background="transparent" speed="1" loop autoplay>
                     </lottie-player>
                     <h4>Functional Movement</h4>
                     <p>We use safe and efficient movements similar to those you use every day in life.</p>
                 </div>
                 <div class="icon-text-container">
-                    <lottie-player class="" src="../assets/json/high-intensity.json" mode="" background="transparent"
+                    <lottie-player class="" src="./assets/json/high-intensity.json" mode="" background="transparent"
                         speed="1" loop autoplay>
                     </lottie-player>
                     <h4>High Intensity</h4>
@@ -116,7 +139,7 @@
                 </div>
                 <!-- <div class="break"></div> -->
                 <div class="icon-text-container">
-                    <lottie-player class="" src="../assets/json/community.json" mode="" background="transparent"
+                    <lottie-player class="" src="./assets/json/community.json" mode="" background="transparent"
                         speed="1" loop autoplay>
                     </lottie-player>
                     <h4>Community</h4>
@@ -124,14 +147,14 @@
                         training with friends. Make new friends. The fun is in the community.</p>
                 </div>
                 <div class="icon-text-container">
-                    <lottie-player class="" src="../assets/json/scalable.json" mode="" background="transparent"
-                        speed="1" loop autoplay>
+                    <lottie-player class="" src="./assets/json/scalable.json" mode="" background="transparent" speed="1"
+                        loop autoplay>
                     </lottie-player>
                     <h4>Scalable</h4>
                     <p>Every workout is scalable to everyone’s ability, ensuring progress to the next step.</p>
                 </div>
                 <div class="icon-text-container">
-                    <lottie-player class="" src="../assets/json/quality-coaching.json" mode="" background="transparent"
+                    <lottie-player class="" src="./assets/json/quality-coaching.json" mode="" background="transparent"
                         speed="1" loop autoplay>
                     </lottie-player>
                     <h4>Quality Coaching</h4>
@@ -143,27 +166,27 @@
     <section id="meet-the-coaches">
         <div class="meet-the-coaches-wrapper  wrapper">
             <div class="hearts-1">
-                <img src="../assets/svg/hearts-light-orange-background.svg" alt="">
+                <img src="./assets/svg/hearts-light-orange-background.svg" alt="">
             </div>
             <!-- <div class="hearts-2">
-                <img src="../assets/svg/hearts-light-orange-background.svg" alt="">
+                <img src="./assets/svg/hearts-light-orange-background.svg" alt="">
             </div> -->
             <h2>Meet the Coaches</h2>
             <div class="meet-the-coaches-image-text-wrapper">
-                <div class="meet-the-coaches-image-text-container">
-                    <img src="../assets/images/coach-Alina.jpg" alt="coach-Alina.jpg">
+                <div class="meet-the-coaches-image-text-container mask1">
+                    <img src="./assets/images/coach-Alina.jpg" alt="coach-Alina.jpg">
                     <h4>Alina</h4>
                 </div>
                 <div class="meet-the-coaches-image-text-container">
-                    <img src="../assets/images/coach-Emma.jpg" alt="coach-Emma.jpg">
+                    <img src="./assets/images/coach-Emma.jpg" alt="coach-Emma.jpg">
                     <h4>Emma</h4>
                 </div>
                 <div class="meet-the-coaches-image-text-container">
-                    <img src="../assets/images/coach-Matt.jpg" alt="coach-Matt.jpg">
+                    <img src="./assets/images/coach-Matt.jpg" alt="coach-Matt.jpg">
                     <h4>Matt</h4>
                 </div>
                 <div class="meet-the-coaches-image-text-container">
-                    <img src="../assets/images/coach-Joe.jpg" alt="coach-Joe.jpg">
+                    <img src="./assets/images/coach-Joe.jpg" alt="coach-Joe.jpg">
                     <h4>Joe</h4>
                 </div>
             </div>
@@ -177,7 +200,7 @@
                     <div>
                         <h4>March, 2023</h4>
                         <p>Click to view the next available dates</p>
-                        <lottie-player class="lottie-arrow" src="../assets/json/arrow-down.json" mode=""
+                        <lottie-player class="lottie-arrow" src="./assets/json/arrow-down.json" mode=""
                             background="transparent" speed="1" loop autoplay>
                         </lottie-player>
                     </div>
@@ -206,7 +229,7 @@
                     </ul>
                 </div>
                 <div class="taster-session-img">
-                    <img src="../assets/images/DSC02674-taster-session----.jpg" alt="">
+                    <img src="./assets/images/taster-session-section-image1.jpg" alt="">
                 </div>
             </div>
             <div class="taster-session-small-print">
@@ -225,13 +248,18 @@
 
         <div class="gallery wrapper">
             <!-- <div class="phoenix-with-hearts">
-                <img src="../assets/svg/phoenix-with-hearts-graph.svg" alt="">
+                <img src="./assets/svg/phoenix-with-hearts-graph.svg" alt="">
             </div> -->
             <h2>Gallery</h2>
             <div class="carousel fade "></div>
         </div>
     </section>
+    <section id="gallery">
 
+        <div class="gallery wrapper" widht="300">
+            <img src="assets/images/map-ipc.png" alt="">
+        </div>
+    </section>
     <footer>
         <div class="footer">
             <div class="footer-about-us">
@@ -244,7 +272,7 @@
 
             </div>
             <div class="footer-image">
-                <img src="../assets/svg/phoenix-with-hearts-graph-black.svg" alt="" style="width:100px;">
+                <img src="./assets/svg/phoenix-with-hearts-graph-black.svg" alt="" style="width:100px;">
             </div>
             <div class="footer-contact-us">
                 <h4>Get in Touch</h4>
@@ -272,7 +300,7 @@
             Iron Phoenix Fitness
         </p>
     </footer>
-    <script src="./app.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
     <script src="index.js" charset="utf-8"></script>
 
 </body>

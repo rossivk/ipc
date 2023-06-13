@@ -1,0 +1,22 @@
+.timetable {
+    background-color: var(--varLightOrange);
+}
+
+.timetable-wrapper {
+    padding: 50px 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.timetable-wrapper h1 {
+    padding-bottom: 50px;
+}
+
+.timetable-schedule {
+    box-shadow: 0 0 10px 2px #f57f1834;
+}
+
+/* 
+.content-wrap a {
+    color: orangered;
+} */

@@ -11,8 +11,10 @@ header {
 }
 
 .navbar .logo img {
+    position: relative;
     height: 70px;
     display: block;
+    z-index: 5;
 }
 
 .nav-container {
@@ -38,8 +40,9 @@ header {
     padding: 5px 10px;
 }
 
-.nav-link-wrapper a::after,
-.social-icons-desktop a::after {
+.nav-link-wrapper a::after {
+    /* , */
+    /* .social-icons-desktop a::after { */
     content: '';
     position: absolute;
     width: 100%;
@@ -48,8 +51,14 @@ header {
     bottom: -5px;
     left: 0;
     background-color: var(--varLightOrangeText);
-    transform-origin: right;
-    transition: transform 0.3s ease-in-out;
+    /* transform-origin: right; */
+    transition: var(--transition-5);
+}
+
+.social-icons-desktop svg:hover {
+    fill: var(--varLightOrangeText);
+    /* transform-origin: right; */
+    transition: 0.3s ease-in-out;
 }
 
 .nav-link-wrapper a:hover::after,

@@ -1,0 +1,24 @@
+.transition-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+    background-image: url(/assets/gif/loading.gif);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: var(--varBlack);
+    transform: translateX(100%);
+    /* transform: scale(0, 1); */
+    transition: 0.7s ease-out;
+
+}
+
+
+
+.transition-1.is-active {
+    transform: translateX(0);
+    /* transform: scale(1, 1); */
+
+}

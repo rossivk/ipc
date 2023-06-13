@@ -1,4 +1,11 @@
 
+window.onload = () => {
+    const transitionEl = document.querySelector('.transition-page');
+    setTimeout(() => {
+        transitionEl.classList.remove('is-active');
+    }, 50);
+}
+
 // Humburger icon toggle
 
 const navHamburgerIconToggle = document.getElementById('nav-hamburger-icon-toggle');
